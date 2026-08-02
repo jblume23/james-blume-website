@@ -155,7 +155,6 @@ a {
 .portrait {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
   object-fit: cover;
   background: var(--soft-background);
 }
