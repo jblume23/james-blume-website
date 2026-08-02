@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Profile image placeholder</title>
+  <description id="description">Replace this image with your own portrait.</description>
+  <rect width="800" height="1000" fill="#f2f2ef"/>
+  <circle cx="400" cy="330" r="135" fill="#d2d2ce"/>
+  <path d="M165 875c18-191 112-306 235-306s217 115 235 306" fill="#d2d2ce"/>
+  <rect x="95" y="75" width="610" height="850" fill="none" stroke="#bcbcb6" stroke-width="5" stroke-dasharray="18 15"/>
+  <text x="400" y="935" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#74746f">
+    INSERT IMAGE HERE
+  </text>
+</svg>
