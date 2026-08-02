@@ -3,73 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Curriculum vitae">
-  <title>CV</title>
+  <meta name="description" content="Curriculum vitae of INSERT NAME HERE">
+  <title>CV | INSERT NAME HERE</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="cv.js" defer></script>
+  <script defer src="script.js"></script>
 </head>
+
 <body>
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="site-name" href="index.html">Your Name</a>
-      <nav aria-label="Primary navigation">
-        <ul class="site-nav">
-          <li><a href="index.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="cv.html" aria-current="page">CV</a></li>
-        </ul>
+    <div class="site-shell header-inner">
+      <a class="site-name" href="index.html">INSERT NAME HERE</a>
+
+      <button class="nav-toggle" type="button"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="cv.html" aria-current="page">CV</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-shell">
-    <section class="cv-section" aria-labelledby="cv-heading">
-      <div class="cv-heading-row">
-        <div>
-          <h1 id="cv-heading">Curriculum Vitae</h1>
-          <p class="cv-note">The PDF is displayed below.</p>
-        </div>
-
-        <div class="cv-actions" aria-label="CV actions">
-          <a
-            id="cv-fullscreen-link"
-            class="button button--primary"
-            href="files/cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View full screen</a>
-          <a
-            id="cv-download-link"
-            class="button"
-            href="files/cv.pdf"
-            download="cv.pdf"
-          >Download PDF</a>
-        </div>
+  <main class="site-shell page-content cv-page-content">
+    <header class="page-heading cv-heading">
+      <div>
+        <h1>Curriculum Vitae</h1>
+        <p class="cv-updated">Last updated: INSERT DATE HERE</p>
       </div>
 
-      <div class="pdf-frame-wrap" id="pdf-frame-wrap">
-        <div class="pdf-status" id="pdf-status" role="status" aria-live="polite">
+      <div class="cv-actions" aria-label="CV options">
+        <a id="cv-fullscreen-link"
+           href="files/cv.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View full screen
+        </a>
+        <a id="cv-download-link"
+           href="files/cv.pdf"
+           download>
+          Download PDF
+        </a>
+      </div>
+    </header>
+
+    <section class="cv-viewer-section" aria-label="Embedded curriculum vitae">
+      <div class="cv-viewer-shell">
+        <p class="cv-viewer-status" id="cv-viewer-status" role="status">
           Loading CV…
-        </div>
+        </p>
 
         <iframe
+          class="cv-pdf-frame"
           id="cv-pdf-frame"
-          class="pdf-frame"
           title="Curriculum vitae PDF"
-          src="about:blank"
-          loading="eager"
-          allow="fullscreen"
-        ></iframe>
-
-        <noscript>
-          <p class="pdf-fallback">
-            JavaScript is disabled. Open the
-            <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
-            or <a href="files/cv.pdf" download="cv.pdf">download it</a>.
-          </p>
-        </noscript>
+          src="files/cv.pdf#view=FitH&toolbar=1&navpanes=0"
+          loading="eager">
+        </iframe>
       </div>
+
+      <noscript>
+        <p class="cv-viewer-fallback">
+          JavaScript is disabled. You can still
+          <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer">view the PDF</a>.
+        </p>
+      </noscript>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-shell footer-inner">
+      <span>INSERT NAME HERE</span>
+      <span>
+        <a href="mailto:INSERT-EMAIL-HERE">Email</a>
+        · © <span data-current-year></span>
+      </span>
+    </div>
+  </footer>
 </body>
 </html>
