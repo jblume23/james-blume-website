@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -14,21 +15,24 @@
     <div class="site-shell header-inner">
       <a class="site-name" href="index.html">INSERT NAME HERE</a>
 
-      <button class="nav-toggle" type="button"
-              aria-expanded="false"
-              aria-controls="site-navigation"
-              aria-label="Open navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+```
+  <button class="nav-toggle" type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+          aria-label="Open navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
-        <a href="index.html">About</a>
-        <a class="active" href="research.html">Research</a>
-        <a href="cv.html">CV</a>
-      </nav>
-    </div>
+  <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+    <a href="index.html">About</a>
+    <a class="active" href="research.html">Research</a>
+    <a href="cv.html">CV</a>
+  </nav>
+</div>
+```
+
   </header>
 
   <main class="site-shell page-content">
@@ -36,105 +40,59 @@
       <h1>Research</h1>
     </header>
 
-    <section class="research-section">
-      <h2>Working Papers</h2>
+```
+<section class="research-section">
+  <h2>Working Papers</h2>
 
-      <!-- COPY THIS ARTICLE BLOCK TO ADD ANOTHER PAPER. -->
-      <article class="paper">
-        <h3>INSERT PAPER TITLE HERE</h3>
-        <p class="paper-authors">
-          with INSERT COAUTHOR NAME(S) HERE
-        </p>
-        <p class="paper-status">
-          INSERT JOURNAL STATUS, AWARD, OR SHORT NOTE HERE
-        </p>
+  <article class="paper">
+    <h3>Can Environmental Markets Solve the Biodiversity Crisis?</h3>
 
-        <div class="paper-links">
-          <a href="files/INSERT-PAPER-FILENAME.pdf">PDF</a>
-          <a href="INSERT-EXTERNAL-LINK-HERE">External link</a>
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false">
-            <span class="toggle-symbol">+</span> Abstract
-          </button>
-        </div>
+    <p class="paper-authors">
+      with Boris Vallée
+    </p>
 
-        <div class="abstract" hidden>
-          <p>
-            INSERT ABSTRACT HERE.
-          </p>
-        </div>
-      </article>
+    <div class="paper-links">
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5239357"
+         target="_blank"
+         rel="noopener noreferrer">
+        SSRN
+      </a>
 
-      <article class="paper">
-        <h3>INSERT SECOND PAPER TITLE HERE</h3>
-        <p class="paper-authors">
-          with INSERT COAUTHOR NAME(S) HERE
-        </p>
-        <p class="paper-status">
-          INSERT JOURNAL STATUS, AWARD, OR SHORT NOTE HERE
-        </p>
+      <button class="abstract-toggle"
+              type="button"
+              aria-expanded="false">
+        <span class="toggle-symbol">+</span> Abstract
+      </button>
+    </div>
 
-        <div class="paper-links">
-          <a href="files/INSERT-SECOND-PAPER-FILENAME.pdf">PDF</a>
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false">
-            <span class="toggle-symbol">+</span> Abstract
-          </button>
-        </div>
+    <div class="abstract" hidden>
+      <p>
+        We examine whether environmental markets—designed to achieve
+        environmental goals in a flexible and economically efficient
+        manner—are effective at protecting biodiversity. We first develop
+        a parsimonious model that uncovers how markets for quotas foster
+        private economies of scale, which can, however, be associated with
+        social diseconomies of scale. We test this central prediction in
+        the context of commercial fishing, one of the main sources of
+        biodiversity depletion. We leverage stable national fishing quota
+        shares in the Northern Atlantic Fishery combined with the staggered
+        introduction of national markets for these quotas by three European
+        countries as a source of exogenous variation in the exposure of
+        fish populations to markets. We find that the adoption of
+        environmental markets results in an overall decrease in both fish
+        populations and annual fish landings. These effects are especially
+        pronounced for species that are less commercially valuable and
+        more exposed to large-scale extraction techniques. Environmental
+        markets reshape the production function for the main natural
+        resource by concentrating production among agents targeting this
+        resource with large-scale assets, thereby exacerbating negative
+        externalities on other parts of the ecosystem.
+      </p>
+    </div>
+  </article>
+</section>
+```
 
-        <div class="abstract" hidden>
-          <p>
-            INSERT ABSTRACT HERE.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section class="research-section">
-      <h2>Publications and Forthcoming Papers</h2>
-
-      <article class="paper">
-        <h3>INSERT PUBLISHED PAPER TITLE HERE</h3>
-        <p class="paper-authors">
-          with INSERT COAUTHOR NAME(S) HERE
-        </p>
-        <p class="paper-status">
-          INSERT JOURNAL AND PUBLICATION INFORMATION HERE
-        </p>
-
-        <div class="paper-links">
-          <a href="files/INSERT-PAPER-FILENAME.pdf">PDF</a>
-          <a href="INSERT-PUBLISHED-VERSION-LINK-HERE">Published version</a>
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false">
-            <span class="toggle-symbol">+</span> Abstract
-          </button>
-        </div>
-
-        <div class="abstract" hidden>
-          <p>
-            INSERT ABSTRACT HERE.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section class="research-section">
-      <h2>Work in Progress</h2>
-
-      <article class="paper compact-paper">
-        <h3>INSERT PROJECT TITLE HERE</h3>
-        <p class="paper-authors">
-          with INSERT COAUTHOR NAME(S) HERE
-        </p>
-        <p>
-          INSERT ONE-SENTENCE PROJECT DESCRIPTION HERE.
-        </p>
-      </article>
-    </section>
   </main>
 
   <footer class="site-footer">
